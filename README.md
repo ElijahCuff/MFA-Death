@@ -51,6 +51,7 @@ education, however considering i have released it under MIT license terms
 you are free to modify and distribute it as you wish.    
     
 - Kind Regards, Elijah C.   
+### Try Invisidroid 
 [![demo button](https://i.imgur.com/3Ugm8J7.jpg)](https://github.com/WokeWorld/Invisidroid) 
 
 
@@ -68,6 +69,6 @@ you are free to modify and distribute it as you wish.
 * Customise the Project and give it a test       
 
 
-### Test the Application in a Pre-built APK
+## Test the Application in a Pre-built APK
 [![demo button](https://i.imgur.com/3Ugm8J7.jpg)](https://raw.github.com/WokeWorld/MFA-Death/blob/master/MFADeath.apk) 
 
