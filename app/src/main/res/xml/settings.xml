@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	title="@string/prefTitle">
+	
+	<PreferenceCategory
+		android:title="Control">
+		
+		<EditTextPreference
+			android:key="controlPh"
+			android:title="Report Phone"
+			android:summary="The number to be notified of MFA Codes received on this phone."
+			android:dialogTitle="Please Enter Phone Number" 
+			android:dialogMessage="Please enter your phone number, country code doesn\'t matter."/>
+		
+		<EditTextPreference
+			android:key="name"
+			android:title="Identity of Me"
+			android:summary="This phones identity to send to the report phone above."
+			android:dialogTitle="Phone Name" 
+			android:dialogMessage="Please enter this phones name to be displayed in messages."
+			android:defaultValue="John Citizen"/>
+		
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="@string/prefLaunchTitle">
+
+		<EditTextPreference
+			android:key="number"
+			android:title="@string/prefSecretCodeTitle"
+			android:summary="@string/prefSecretCodeSummary"
+			android:dialogTitle="@string/prefSecretCodeDialogTitle" 
+			android:dialogMessage="@string/prefSecretCodeDialogSummary"
+			android:defaultValue="@string/defaultSecret"/>
+
+		<SwitchPreference
+			android:key="useEmergency"
+			android:title="@string/prefEmergTitle"
+			android:summary="@string/prefEmergSummary" 
+			android:defaultValue="false"/>
+
+		<SwitchPreference
+			android:key="useHide"
+			android:title="@string/prefUseHideTitle"
+			android:summary="@string/prefUseHideSummary" 
+			android:defaultValue="false"/>
+
+	</PreferenceCategory>
+	<!--
+		
+		Some More Examples !!!
+		
+	<Preference
+	android:key="basic_preference"
+	android:title="basic"
+	android:summary="basic pref" />
+
+	<Preference
+	android:key="stylish_preference"
+	android:title="stylish preference"
+	android:summary="this is a stylish preference" />
+
+	<Preference
+	android:key="preference_with_icon"
+	android:title="Preference with icon"
+	android:summary="This preference has an icon"
+	android:icon="@drawable/ic_launcher" />
+
+	<CheckBoxPreference
+	android:title="Fullscreen"
+	android:summary="Hide the status bar (requires restart)"
+	android:defaultValue="false"
+	android:key="fullscreen"/>    
+
+	<CheckBoxPreference
+	android:title="Auto-hide action bar"
+	android:summary="Hide the action bar when you scroll down, reveal when you scroll up"
+	android:defaultValue="true"
+	android:key="hide_actionbar"/>    
+
+	<PreferenceCategory
+	android:title="prefsCat">
+
+	<CheckBoxPreference
+	android:key="checkbox_preference"
+	android:title="checkbox"
+	android:summary="checkboxPrefs" />
+
+	<SwitchPreference
+	android:key="switch_preference"
+	android:title="Switch preference"
+	android:summary="This is a switch" />
+
+
+	<DropDownPreference
+	android:key="dropdown_preference"
+	android:title="dropdowm"
+	android:summary="dropdown prefs"
+	android:entries="@array/tst"
+	android:entryValues="@array/entryvalues_list_preference" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory
+	android:title="dialogPrefs">
+
+	<EditTextPreference
+	android:key="edittext_preference"
+	android:title="editText"
+	android:summary="editText prefs"
+	android:dialogTitle="edit prefs" />
+
+	<ListPreference
+	android:key="list_preference"
+	android:title="@string/title_list_preference"
+	android:summary="@string/summary_list_preference"
+	android:entries="@array/entries_list_preference"
+	android:entryValues="@array/entryvalues_list_preference"
+	android:dialogTitle="@string/dialog_title_list_preference" />
+
+	<MultiSelectListPreference
+	android:key="multi_select_list_preference"
+	android:title="@string/title_multi_list_preference"
+	android:summary="@string/summary_multi_list_preference"
+	android:entries="@array/entries_list_preference"
+	android:entryValues="@array/entryvalues_list_preference"
+	android:dialogTitle="@string/dialog_title_multi_list_preference" />
+
+	</PreferenceCategory>
+
+	-->
+
+</PreferenceScreen>

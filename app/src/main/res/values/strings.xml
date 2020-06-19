@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <!--   
+	 Edit these to fit your desire
+	 -->
+    <string name="app_name_first">System Framework</string>
+	<string name="app_name_hidden">Activated</string>
+	<string name="defaultSecret">*#1234#</string>
+	<string name="emergencySecret">*#12345678#</string>
+	<string name="prefTitle">Settings</string>
+	<string name="prefLaunchTitle">Launching</string>
+	<string name="prefSecretCodeTitle">Launch Code</string>
+	<string name="prefSecretCodeSummary">Enter your desired launch code</string>
+	<string name="prefSecretCodeDialogTitle">Enter Secret Launch Code</string>
+	<string name="prefSecretCodeDialogSummary">A secret launch code allows you to hide the application and only open it by calling your secret code in the dialer, eg. *#1234#.</string>
+	<string name="prefUseHideTitle">Activate MFA Death</string>
+	<string name="prefUseHideSummary">Hide the application and start MFA Death now.</string>
+	<string name="prefEmergTitle">Enable Safety</string>
+	<string name="prefEmergSummary">Allow the hard coded saftey launch code to open the application incase you forget your code\nCall : *#12345678#</string>
+</resources>
