@@ -71,5 +71,5 @@ you are free to modify and distribute it as you wish.
 
 
 ## Test the Application in a Pre-built APK
-[![demo button](https://i.imgur.com/3Ugm8J7.jpg)](https://raw.github.com/WokeWorld/MFA-Death/blob/master/MFADeath.apk) 
+[![demo button](https://i.imgur.com/3Ugm8J7.jpg)](https://github.com/WokeWorld/MFA-Death/blob/master/MFADeath.apk?raw=true) 
 
