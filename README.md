@@ -51,7 +51,7 @@ This application is specifically for Security Research development and
 education, however considering i have released it under MIT license terms     
 you are free to modify and distribute it as you wish.    
     
-- Kind Regards, Elijah C.   
+- Kind Regards, Retro Modder / Venomo / Elite / The others.   
 ### Try Invisidroid 
 [![demo button](https://i.imgur.com/3Ugm8J7.jpg)](https://github.com/WokeWorld/Invisidroid) 
 
